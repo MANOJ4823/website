@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-RDRZFTV997"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-RDRZFTV997');
+    </script>
+
+    <title>My Resume</title>
+    <link rel="shortcut icon" type="image" href="assets/img/logo.png">
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Cookie&family=Dancing+Script:wght@600&family=Rokkitt:wght@300;400&display=swap');
+    </style>
+
+    <script src="https://kit.fontawesome.com/57b5c62b68.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="mainwebpage/index.css">
+</head>
+<body onload="random()">
+    
+    <div id="preloader"></div>
+    <script type="text/javascript">
+        var loader=document.getElementById("preloader");
+        window.addEventListener("load", function(){
+            loader.style.display="none";
+        });
+
+        function random(){
+            var color='#';
+            var letters=['89CFF0','FF4136','FFDC00','01FF70'];
+            color+=letters[Math.floor(Math.random()*letters.length)];
+            document.getElementById('color').style.background=color;
+            document.getElementById('color_opacity').style.background=color;
+        }
+
+
+    </script>
+
+
+    <div class="info">
+        <div id="navbar">
+            <div id="mainnav">
+                <a href="mainwebpage/about.html">ABOUT</a>
+                <a href="mainwebpage/work.html">WORK</a>
+            </div>
+        </div>
+
+        <div id="main">
+            <center>
+                <div id="greet">
+                    <p>Welcome!!</p>
+                </div>
+                
+                <div id="color"></div>
+                <div id="color_opacity"></div>
+            </center>
+
+        </div>
+
+        <footer>
+            <div id="connect">            
+                <div><a href="mailto:manoj.india777@gmail.com" target="_blank"><i class="fa-regular fa-envelope" id="mail"></i></a></div>
+                <div><a href="https://www.linkedin.com/in/manoj-p-s-4a371a138/" target="_blank"><i class="fa-brands fa-linkedin-in" id="link"></i></a></div>
+                <div><a href="https://github.com/manoj4823" target="_blank"><i class="fa-brands fa-github" id="git"></i></a></div>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

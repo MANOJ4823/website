@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-RDRZFTV997"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-RDRZFTV997');
+    </script>
+
+    <title>Calculator</title>
+
+    <link rel="shortcut icon" type="image" href="../assets/img/logo.png">
+    <link rel="stylesheet" href="calculator.css">
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Cookie&family=Dancing+Script:wght@600&family=Rokkitt:wght@300;400&display=swap');
+    </style>
+</head>
+<body>
+    <section id="preloader"></section>
+    <script>
+        var loader=document.getElementById("preloader");
+        window.addEventListener("load", function(){
+            loader.style.display="none";
+        });
+    </script>
+    
+    <div class="container">
+        <form action="#" name="forms">
+            <input type="text" name="answer">
+            <div class="buttons">
+            <input type="button" value="AC" onclick="forms.answer.value = ''">
+            <input type="button" value="DEL" onclick="forms.answer.value = forms.answer.value.substr(0 , forms.answer.value.length -1)">
+            <input type="button" value="%" onclick="forms.answer.value += '%'">
+            <input type="button" value="/" onclick="forms.answer.value += '/'">
+            </div>
+            <div class="buttons">
+            <input type="button" value="7" onclick="forms.answer.value += '7'">
+            <input type="button" value="8" onclick="forms.answer.value += '8'">
+            <input type="button" value="9" onclick="forms.answer.value += '9'">
+            <input type="button" value="*" onclick="forms.answer.value += '*'">
+            </div>
+            <div class="buttons">
+            <input type="button" value="4" onclick="forms.answer.value += '4'">
+            <input type="button" value="5" onclick="forms.answer.value += '5'">
+            <input type="button" value="6" onclick="forms.answer.value += '6'">
+            <input type="button" value="-" onclick="forms.answer.value += '-'">
+            </div>
+            <div class="buttons">
+            <input type="button" value="1" onclick="forms.answer.value += '1'">
+            <input type="button" value="2" onclick="forms.answer.value += '2'">
+            <input type="button" value="3" onclick="forms.answer.value += '3'">
+            <input type="button" value="+" onclick="forms.answer.value += '+'">
+            </div>
+            <div class="buttons">
+            <input type="button" value="0"  onclick="forms.answer.value += '0'">
+            <input type="button" value="00" onclick="forms.answer.value += '00'">
+            <input type="button" value="." onclick="forms.answer.value += '.'">
+            <input type="button" value="=" onclick="forms.answer.value = eval(forms.answer.value)">
+            </div>
+        </form>
+    </div>
+</body>
+</html>

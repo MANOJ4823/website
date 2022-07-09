@@ -1,0 +1,211 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    user-select: none;
+}
+
+body{
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+}
+
+#preloader{
+    background: black url(../assets/img/circle-loader-gif-2.gif) no-repeat center center;
+    background-size: 15%;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+}
+
+#info{
+    height: 100%;
+    width: 100%;
+}
+
+#navbar{
+    height: 7vh;
+    width: 100%;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#navbar a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.5rem;
+    font-family: 'Rokkitt', serif;
+}
+
+#navbar a:hover{
+    text-decoration: underline;
+}
+
+#mainnav{
+    height: 100%;
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#main{
+    height: 86vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#greet{
+    height: 200px;
+    width: 350px;
+    position: absolute;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#greet p{
+    font-family: 'Cookie', cursive;
+    font-size: 6rem;
+}
+
+#color, #color_opacity{
+    height: 100px;
+    width: 350px;
+    position: relative;
+    z-index: -1;
+}
+
+#color_opacity{
+    opacity: 0.2;
+}
+
+footer{
+    height: 7vh;
+    width: 100%;
+}
+
+#connect{
+    height: 100%;
+    width: 50%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#connect div{
+    height: 40px;
+    width: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#connect i{
+    font-size: 1.5rem;
+    color: grey;
+    background-color: white;
+    border-radius: 100px;
+}
+
+#connect i:hover{
+    font-size: 2rem;
+    color: black;
+}
+
+#mail{
+    animation: mail 0.5s 0.3s 1;
+}
+
+#link{
+    animation: link 0.5s 0.4s 1;
+}
+
+#git{
+    animation: git 0.5s 0.5s 1;
+}
+
+@keyframes link{
+    0%{
+        color: black;
+    }
+    50%{
+        font-size: 3rem;
+        color: black;
+    }
+    100%{
+        color: black;
+    }
+}
+
+@keyframes mail{
+    0%{
+        color: black;
+    }
+    50%{
+        font-size: 3rem;
+        color: black;
+    }
+    100%{
+        color: black;
+    }
+}
+
+@keyframes git{
+    0%{
+        color: black;
+    }
+    50%{
+        font-size: 3rem;
+        color: black;
+    }
+    100%{
+        color: black;
+    }
+}
+
+@media only screen and (max-width:1000px){
+    #mainnav{
+        height: 100%;
+        width: 100%;
+    }
+
+    #greet{
+        height: 150px;
+        width: 250px;
+    }
+
+    #greet p{
+        font-size: 4rem;
+    }
+
+    #color{
+        height: 75px;
+        width: 250px;
+    }
+
+    #color_opacity{
+        height: 75px;
+        width: 250px;
+    }
+
+    #connect{
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width:500px){
+    #main{
+        height: 80vh;
+    }
+}

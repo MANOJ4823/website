@@ -1,0 +1,703 @@
+*{
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box;
+  user-select: none;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+#preloader{
+    background: black url(../assets/img/circle-loader-gif-2.gif) no-repeat center center;
+    background-size: 15%;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+}
+
+section{
+  height: 95vh;
+  width: 100%;
+}
+
+#nav{
+  height: 10vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#div1{
+  height: 100%;
+  width: 25%;
+  display: block;
+  padding: 0.5% 2%;
+}
+
+#div1 p{
+  font-size: 1.25rem;
+  font-family: 'Rokkitt', serif;
+}
+
+#div2{
+  height: 100%;
+  width: 35%;
+}
+
+#div3{
+  height: 100%;
+  width: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#div31{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 50%;
+}
+
+#div32{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 50%;
+}
+
+#div31 div, #div32 div{
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Rokkitt', serif;
+}
+
+#div31 .texts{
+  text-decoration: none;
+  font-size: 1.5rem;
+  color: grey;
+}
+
+#div3 .texts:hover{
+  text-decoration: underline;
+  color: black;
+}
+
+#div3 i{
+  font-size: 1.5rem;
+  color: grey;
+  background-color: white;
+}
+
+#div3 i:hover{
+  font-size: 2rem;
+  color: black;
+}
+
+#main{
+  height: 90vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#content{
+  height: 100%;
+  width: 70%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#text{
+  display: grid;
+  grid-template-columns: auto;
+  justify-content: left;
+  align-items: center;
+  height: 60%;
+  width: 100%;
+}
+
+#text p{
+  font-size: 5rem;
+  font-weight: 100;
+  font-family: 'Rokkitt', serif;
+}
+
+#section2{
+  background-color: rgb(235, 235, 235);
+  align-items: center;
+  font-family: 'Rokkitt', serif;
+}
+
+#edutitle{
+  height: 15vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3rem;
+  text-decoration: underline;
+}
+
+#edu{
+  height: 80vh;
+  width: 100%;
+  display: flex;
+}
+
+#edu div{
+  padding: 6%;
+  height: 100%;
+  width: 33%;
+}
+
+#edu div h2{
+  font-weight: bold;
+  font-size: 2.5rem;
+}
+
+#edu div p{
+  font-size: 2rem;
+  color: rgb(57, 52, 52);
+}
+
+#info{
+  height: 90%;
+  width: 100%;
+}
+
+#skiti{
+  height: 10%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  text-decoration: underline;
+  font-family: 'Rokkitt', serif;
+}
+
+#skills{
+  height: 80%;
+  width: 100%;
+  display: grid;
+  grid-template-columns: auto auto auto;
+}
+
+#skills div{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#cj, #aj, #s, #h, #sql, #html, #css, #tw, #b, #js, #git, #lin{
+  display: flex;
+  height: 100%;
+  width: 100%;
+}
+
+#cj, #s, #h, #sql, #html, #css, #tw, #b{
+  font-size: 3rem;
+}
+
+#js, #git, #lin{
+  font-size: 4rem;
+}
+
+#cj{
+  font-weight: 500;
+  font-family: 'Rokkitt', serif;
+}
+
+#aj{
+  font-size: 2rem;
+  font-weight: 300;
+  font-family: 'Rokkitt', serif;
+}
+
+#s{
+  font-weight: bold;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+#h{
+  font-weight: 200;
+  color: silver;
+  font-family: 'Rokkitt', serif;
+}
+
+#sql{
+  font-weight: 400;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+#html{
+  font-weight: 300;
+  font-family: 'Rokkitt', serif;
+}
+
+#css{
+  font-weight: 100;
+  color: silver;
+  font-family: 'Dancing Script', cursive;
+  font-family: 'Rokkitt', serif;
+}
+
+#tw{
+  font-weight: 100;
+  color: rgb(63, 63, 63);
+  font-family: 'Rokkitt', serif;
+}
+
+#b{
+  font-weight: 200;
+  color: silver;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+#js{
+  font-weight: bolder;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#git{
+  font-weight: 300;
+  color: silver;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#lin{
+  font-weight: bold;
+  font-family: monospace;
+}
+
+#html span, #git span, #css span, #cj span, #aj span, #sql span, #js span{
+  color: white;
+  font-weight: bold;
+}
+
+#html p:hover span, #css p:hover span, #js p:hover span, #git p:hover span, #cj p:hover span, #aj p:hover span, #sql p:hover span{
+  color: black;
+  display: contents;
+}
+
+#html a, #css a, #js a{
+  text-decoration: none;
+  color: black;
+}
+
+#sql span, #js span{
+  font-family: monospace;
+}
+
+#lin #i, #lin #u1{
+  display: none;
+}
+
+#lin:hover #li, #lin:hover #u2{
+  display: none;
+}
+
+#lin:hover #u1, #lin:hover #i{
+  display: block;
+}
+
+#work{
+  height: 10%;
+  width: 100%;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#work div{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 50%;
+}
+
+#work a{
+  color: white;
+  text-decoration: none;
+  font-family: 'Rokkitt', serif;
+  font-size: 1.5rem;
+}
+
+#work a:hover{
+  font-size: 1.6rem;
+}
+
+#work i{
+  color: white;
+  padding-top: 7%;
+}
+
+@media only screen and (max-width:1400px){
+
+  #div1{
+    width: 45%;
+  }
+
+  #div1 p{
+    font-size: 1.1rem;
+  }
+
+  #div2{
+    width: 5%;
+  }
+
+  #div3{
+    width: 50%;
+  }
+
+  #content{
+    width: 80%;
+  }
+  
+  #text p{
+    font-size: 4rem;
+  }
+
+  #edutitle{
+    font-size: 2.2rem;
+  }
+
+  #edu div h2{
+    font-weight: bold;
+    font-size: 1.8rem;
+  }
+
+  #edu div p{
+    font-size: 1.2rem;
+    color: rgb(57, 52, 52);
+  }
+
+  #cj, #s, #h, #sql, #html, #css, #tw, #b{
+    font-size: 2rem;
+  }
+
+  #aj{
+    font-size: 1.5rem;
+  }
+
+  #js, #git, #lin{
+    font-size: 3rem;
+  }
+}
+
+@media only screen and (max-width:1000px){
+
+  #content{
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #text p{
+    font-size: 3rem;
+  }
+
+  #lin{
+    padding: 6% 0% 0% 20%;
+  }
+}
+
+@media only screen and (max-width:800px){
+  #div1{
+    width: 50%;
+  }
+
+  #div1 p{
+    font-size: 1rem;
+  }
+
+  #div2{
+    width: 0%;
+  }
+
+  #div3{
+    width: 50%;
+  }
+
+  #div31 .texts{
+    font-size: 1.3rem;
+  }
+
+  #div3 i{
+    font-size: 1.2rem;
+  }
+
+  #content{
+    width: 100%;
+  }
+
+  #text{
+    height: 50%;
+    width: 80%;
+  }
+
+  #text p{
+    font-size: 3rem;
+  }
+
+  #edutitle{
+    font-size: 2rem;
+  }
+
+  #edu div{
+    padding: 5% 5%;
+    height: 80%;
+    width: 100%;
+  }
+
+  #edu div h2, #cj, #s, #h, #sql, #html, #css, #tw, #b{
+    font-size: 1.5rem;
+  }
+
+  #edu div p{
+    font-size: 1.3rem;
+  }
+
+  #aj{
+    font-size: 1.1rem;
+  }
+
+  #js, #git, #lin{
+    font-size: 2rem;
+  }
+
+  #work a{
+    font-size: 1.1rem;
+  }
+
+  #work a:hover{
+    font-size: 1.2rem;
+  }
+}
+
+
+@media only screen and (max-width:600px){
+  #content{
+    height: 100%;
+  }
+
+  #edutitle{
+    font-size: 1.6rem;
+  }
+
+  #edu div h2, #edu div p{
+    font-size: 1.2rem;
+  }
+
+  #skiti h3{
+    font-size: 1.5rem;
+  }
+
+  #cj, #s, #h, #sql, #html, #css, #tw, #b{
+    font-size: 1.1rem;
+  }
+
+  #js, #git, #lin{
+    font-size: 1.5rem;
+  }
+}
+
+@media only screen and (max-width:500px){
+    
+  #nav{
+    height: 20vh;
+    width: 100%;
+    display: block;
+  }
+
+  #div1{
+    width: 100%;
+    height: 50%;
+  }
+
+  #div1 p{
+    font-size: 1.1rem;
+  }
+
+  #div2{
+    height: 0%;
+    width: 100%;
+  }
+
+  #div3{
+    width: 100%;
+    height: 50%;
+  }
+
+  #div31 .texts{
+    font-size: 1.3rem;
+  }
+
+  #div3 i:hover{
+    font-size: 1.5rem;
+  }
+
+  #main{
+    height: 60vh;
+  }
+
+  #content{
+    width: 80%;
+    height: 100%;
+    display: block;
+    padding: 10% 0%;
+  }
+
+  #text p{
+    font-size: 2.8rem;
+  }
+
+  #edutitle{
+    font-size: 1.1rem;
+  }
+
+  #edu{
+    display: block;
+  }
+
+  #edu div{
+    padding: 1% 5%;
+    height: 33%;
+    width: 100%;
+  }
+
+  #edu div h2{
+    font-size: 1.01rem;
+  }
+
+  #edu div p{
+    font-size: 1rem;
+  }
+
+  #skills{
+    margin-top: 12%;
+    height: 70%;
+  }
+
+  #cj, #h, #sql{
+    font-size: 1rem;
+    font-weight: 300;
+  }
+
+  #aj, #html{
+    font-size: 1rem;
+    font-weight: 200;
+  }
+
+  #css, #tw, #b{
+    font-size: 1rem;
+    font-weight: 300;
+  }
+
+  #s, #js, #git, #lin{
+    font-size: 1rem;
+    font-weight: 500;
+  }
+}
+
+@media only screen and (max-width:360px){
+  #cj, #aj, #s, #h, #sql, #html, #css, #tw, #b, #js, #git, #lin{
+    font-size: 1rem;
+    font-weight: 500;
+    padding: 0%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  #cj, #aj{
+    padding: 10% 0% 0% 0%;
+  }
+  
+  #cj p:hover span, #aj p:hover span{
+    font-size:0.9rem;
+    font-weight: light;
+  }
+
+  #work a{
+    font-size: 0.8rem;
+  }
+
+  #work a:hover{
+    font-size: 0.9rem;
+  }
+}
+
+@media only screen and (max-width:300px){
+    
+  #nav{
+    height: 20vh;
+  }
+
+  #div1 p{
+    font-size: 1.1rem;
+  }
+
+  #div3{
+    display: flex;
+  }
+
+  #div31 .texts{
+    font-size: 1.2rem;
+  }
+
+  #div3 i{
+    font-size: 1.1rem;
+  }
+
+  #div3 i:hover{
+    font-size: 1.2rem;
+  }
+
+  #main{
+    height: 70vh;
+  }
+
+  #content{
+    width: 80%;
+    height: 100%;
+    display: block;
+    padding: 10% 0%;
+  }
+
+  #text p{
+    font-size: 2.5rem;
+  }
+
+  #edutitle{
+    font-size: 1.1rem;
+  }
+
+  #edu div h2{
+    font-size: 1.01rem;
+  }
+
+  #edu div p{
+    font-size: 1rem;
+  }
+
+  #skiti h3{
+    font-size: 1.1rem;
+  }
+}

@@ -1,0 +1,111 @@
+* {
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box;
+  user-select: none;
+}
+
+#preloader {
+  background: black url(../assets/img/circle-loader-gif-2.gif) no-repeat center
+    center;
+  background-size: 15%;
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  z-index: 100;
+}
+
+body {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  font-family: "Rokkitt", serif;
+}
+
+#contents {
+  height: 50%;
+  width: 50%;
+}
+
+#div1,
+#div2 {
+  height: 50%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#div1 div,
+#div2 div {
+  width: 49%;
+  height: 96%;
+  display: flex;
+  justify-content: center;
+  justify-content: space-around;
+  align-items: center;
+}
+
+a {
+  text-decoration: none;
+  font-size: 1.5rem;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+#cal {
+  background-color: orangered;
+}
+
+#clo {
+  background-color: lawngreen;
+}
+
+#sto {
+  background-color: aqua;
+}
+
+#tic {
+  background-color: gold;
+}
+
+#clo a,
+#tic a {
+  color: black;
+}
+
+#cal a,
+#sto a {
+  color: white;
+}
+
+@media only screen and (max-width:500px) {
+  #contents{
+    height: 30%;
+  }
+
+  #div1 div, #div2 div {
+  width: 48%;
+  height: 96%;
+  display: flex;
+  justify-content: center;
+  justify-content: space-around;
+  align-items: center;
+}
+
+  a{
+    font-size: 1.2rem;
+  }
+}
+
+@media only screen and (max-width:300px) {
+  a{
+    font-size: 0.8rem;
+  }
+}
